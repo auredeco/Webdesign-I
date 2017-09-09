@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Decock Aurelio</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="styles/css/stylesheet.css" type="text/css">
+</head>
+
+<body>
+	<nav>
+    	<ul>
+		<li><a href="#section-1">Home</a></li>
+		<li><a href="#section-2">About me</a></li>
+		<li><a href="#section-3">Intrests</a></li>
+		<li><a href="#section-4">Webdesign</a></li>
+        </ul>
+	</nav>
+    
+<section id="section-1">
+    	<img src="images/portret.png" alt="portret">
+        
+        <h2>Home</h2>
+        
+        <p> Hallo mijn naam is <strong>Decock Aurelio</strong>, geboren op <strong>19 september 1995</strong> te <strong>Kortrijk</strong>. Hedendaags woon ik nog steeds in het gezellige stadje <strong>Harelbeke</strong>. Ik heb <strong>2 zussen</strong>, 1 half zus en 1 echte zus. Mijn halfzus heeft een leefijd van 21 en mijn echte zus is er 10. Samen zijn we opgevoed bij onze grootouders. Sinds 1 januari heb ik een relatie met <strong>Daphne Scherpereel</strong>. En dit is mijn examenopdracht van webdesign. </p>
+    </section>
+
+	<img src="images/daphne.png"  alt="daphne" class="fotos">
+	<img src="images/demi.jpg"  alt="demi" class="fotos">
+    <img src="images/perle.jpg"  alt="perle" class="fotos">
+
+	<section id="section-2">
+    	<h1>About me</h1>
+        <p>Hallo ik ben Aurelio, ik ben 18 jaar en ik woon in Harelbeke. Ik ben opgevoed bij mijn grootouders. Mijn hobby's zijn gamen, en uitgaan met vrienden maar daar kom ik later op terug. Ik ben ingeschreven in de Arteveldehogeschool om af te studeren als <strong>webdesigner</strong>. Ik heb al een beetje voorkennis maar ik heb zeker nog veel te leren. De voorkennis heb ik te danken aan mijn vooropleiding in het Technisch Atheneum in Heule. Ik heb enkele scholen gedaan in het secundair, zoals:
+        <dl>
+        	 <dt>2007-2008: <a href="http://www.spesnostra.be" ><strong>Spes nostra Kuurne</strong></a>, moderne (3maand)</dt>
+            <dt>2007-2009: <a href="http://www.campusdriehofsteden.be/middenschool/praktisch.htm"><strong>Middenschool 2 Kortrijk</strong></a>, moderne en industriële wetenschappen</dt>
+            <dd>2009-2013: <a href="http://www.tah.be/multimedia/"><strong>TA Heule</strong></a>, Grafische en Multimedia</dd>
+        </dl>
+        </p>
+        <a href="http://askingalexandria.com"><img src="images/asking-alexandria.png"  alt="AA"></a>
+        <p>
+        Mijn favoritie muziek-genre is rock,metal, ... Kortom, alles wat met een goeie gitaar,bas en drum in combinatie met ruwe en clean vocals te maken heeft. Een uitschieter daarvan is de band '<strong><a href="http://askingalexandria.com">Asking Alexandria</a></strong>', sinds vorig jaar ben ik samen met een klasgenoot <strong>Roë Callberson</strong> naar hun optreden gaan kijken, hij was fan en ik was niet echt een grote liefhebber van dat genre. Maar na hun optreden heb ik me bedacht en is mijn sympathie voor de band beginnen groeien. Daarna heb ik ze nogmaals bezocht op Graspop Metal Meeting 2013. Maar ik ben niet enkel fan van Asking Alexandria natuurlijk, ook bands zoals Slipknot, Battlecross, Parkway Drive en vele anderen kunnen mij bekoren.
+        </p>
+    </section>
+
+	<section id="section-3">
+    	<h1>Intrests</h1>
+        <p>
+        Zoals ik al zei: Mijn hobby's zijn gamen, uitgaan met vrienden, festivals,... Mijn vriendengroep is nogal een hechte groep, dus daarom doen we altijd alles samen, zowel gamen als uitgaan. <br> Gamen is voor mij echt een passie, ik game wanneer ik kan, verslaafd ben ik niet. Werken voor school komt natuurlijk op de eerste plaats. Mijn favorite games zijn:
+        	<ol>
+        		<li>League of Legends</li>
+           	<li>Skyrim</li>
+           	<li>Battlefield 4</li>
+        	</ol>
+        </p>
+        <p>
+        Als ik uitga met mijn vrienden doen we het liefst van al festivals. Zoals vorig jaar heb ik naar Graspop Metal Meeting geweest. Ook Reggae Geel was een optie maar dat hadden we het jaar ervoor al gedaan. Festivals zijn een echte descipline van teambuilding. De band groeit enorm wanneer we samen eens iets anders doen dan gamen. Maar meestal kan gamen wel een gespreksonderwerp zijn om die festivals.
+        </p>
+        <img src="images/battlefield-4.jpg" alt="BF4">
+    </section>
+    
+    <section id="section-4">
+    	<h1>Voor en nadelen van webdesign</h1>
+			<table border="1">
+  				<tr>
+    				<td> <h3>Voordelen</h3></td>
+    				<td> <h3>Nadelen</h3></td>
+  				</tr>
+  				<tr>
+    				<td>Maakt websites overzichtelijker</td>
+    				<td>coderen gebeurt in kleine letters</td>
+  				</tr>
+  				<tr>
+    				<td>Aangenamer om sites te bezoeken</td>
+    				<td>Moeilijk aan te leren</td>
+  				</tr>
+               <tr>
+               	<td>Responsive webdesign</td>
+                	<td>Veel rekenkundig werk</td>
+               </tr>
+			</table>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="styles/jquery/jquery.js"></script>
+<script src="styles/jquery/jquery.scrollTo.js"></script>
+<script src="styles/jquery/jquery.nav.js"></script>
+<script>
+$(document).ready(function() {
+	$('nav').onePageNav({
+		begin: function() {
+		console.log('start')
+		},
+		end: function() {
+		console.log('stop')
+		}
+	});
+	
+	$('.do').click(function(e) {
+		$('#section-4').append('');
+		e.preventDefault();
+	});
+	
+});
+</script>
+</body>
+</html>
